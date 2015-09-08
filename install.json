@@ -1,0 +1,19 @@
+{
+  "resources": {
+    "head": [
+      {
+        "type": "style",
+        "contents": "{{ options.css }}"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "css": {
+        "title": "CSS Code",
+        "type": "string",
+        "format": "textarea"
+      }
+    }
+  }
+}
