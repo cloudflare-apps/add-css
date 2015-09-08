@@ -2,8 +2,8 @@
   "resources": {
     "head": [
       {
-        "type": "style",
-        "contents": "{{ options.css }}"
+        "type": "script",
+        "src": "./head.js"
       }
     ]
   },
