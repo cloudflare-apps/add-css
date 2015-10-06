@@ -12,7 +12,7 @@
       "css": {
         "title": "CSS Code",
         "type": "string",
-        "format": "textarea"
+        "format": "code"
       }
     }
   }
