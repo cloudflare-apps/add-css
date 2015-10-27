@@ -1,20 +1,22 @@
-// Modified from http://git.io/vZ3Oj
 (function(){
   var options = INSTALL_OPTIONS;
 
-  if (document.createStyleSheet) {
-    var sheet = document.createStyleSheet();
-    sheet.cssText = options.css;
-  } else {
-    var style = document.createElement('style');
-    style.type = 'text/css';
+  var style = document.createElement('style');
+  document.head.appendChild(style);
 
-    if (style.styleSheet) {
-      style.styleSheet.cssText = options.css;
-    } else {
-      style.appendChild(document.createTextNode(options.css));
-    }
+  var update = function(){
+    style.innerHTML = options.css;
+  }
 
-    document.getElementsByTagName('head')[0].appendChild(style);
+  update();
+
+  var setOptions = function(opts){
+    options = opts;
+
+    update();
+  }
+
+  window.EagerAddCSS = {
+    setOptions: setOptions
   }
 })();
