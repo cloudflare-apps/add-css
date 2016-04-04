@@ -16,7 +16,7 @@
     update();
   }
 
-  window.EagerAddCSS = {
+  INSTALL_SCOPE = {
     setOptions: setOptions
   }
 })();
