@@ -3,7 +3,7 @@
     "head": [
       {
         "type": "script",
-        "src": "./head.js"
+        "src": "./source/app.js"
       }
     ]
   },
@@ -19,6 +19,7 @@
     "properties": {
       "css": {
         "title": "CSS Code",
+        "placeholder": "body {\n color: #000;\n}",
         "type": "string",
         "format": "code"
       }
